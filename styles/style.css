@@ -48,6 +48,16 @@ a.btn-login{
     border-radius: 10px;
 }
 
+a.btn-logout{
+    text-decoration: none;
+    color: #fff !important;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    padding: 9px 12px;
+    background-color: #ff7096;
+    border-radius: 10px;
+}
+
 /* ------- End Navbar ------- */
 
 
