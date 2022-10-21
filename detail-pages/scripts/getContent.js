@@ -17,7 +17,7 @@ fetch(url(id))
 
   console.log(data);
 
-  elemImage.setAttribute("src", toString(imageUrl(data.image)));
+  elemImage.setAttribute("src", imageUrl(data.image));
   console.log(data.image);
   elemTitle.textContent = data.title;
   elemTitleDesc.innerHTML = data.titleDesc;
@@ -27,6 +27,7 @@ fetch(url(id))
   console.log("content loaded successfully");
 })
 .catch((error) => {
+  elemImage.setAttribute("src", "https://via.placeholder.com/150");
   elemTitle.innerText = "Error";
   console.log(error);
 });
