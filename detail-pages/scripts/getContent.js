@@ -1,13 +1,5 @@
-const param = new URLSearchParams(window.location.search);
-const id = param.get('id');
-
-const url = (id) => `https://634811ba0484786c6e90f2f2.mockapi.io/jobs/${id}`;
-
-const elemImage = document.getElementById("image");
-const elemTitle = document.getElementById("title");
-const elemTitleDesc = document.getElementById("title-desc");
-const elemContentTitle = document.getElementById("content-title");
-const elemContentDesc = document.getElementById("content-desc");
+const url = (k) = `url${k}`;
+const key = document.getElementById("key");
 
 const imageUrl = (dir) => `./images/${dir}`;
 
