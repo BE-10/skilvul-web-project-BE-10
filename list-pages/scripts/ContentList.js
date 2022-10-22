@@ -1,38 +1,39 @@
 // urls endpoint
-const url = (id) => `https://634811ba0484786c6e90f2f2.mockapi.io/jobs/${id}`;
+const url = `https://634811ba0484786c6e90f2f2.mockapi.io/jobs/`;
 
 // image url
 const imageUrl = (dir) => `./images/${dir}`;
 
-const id = [];
-for (let i = 1; i <= 4; i++) {
-  id.push(i);
-}
-
 const contentContainer = document.getElementById('content');
 
-for (let i = 0; i < 4; i++) {
-  fetch(url(id[i]))
+function main() {
+  fetch(url)
   .then(async (result) => {
     // result case
     const data = await result.json();
 
     console.log(data);
 
-    const cards = `
-      <div class="card p-3 mb-5 mt-2" id="content${i}">
-        <div class="icon"> <img src="${data.image}"></div>
+  contentContainer.innerHTML = '';
+
+    data.forEach(jobs => {
+      const cards = `
+      <div class="card p-3 mb-5 mt-2" id="">
+        <div class="icon"> <img src=" "></div>
         <div class="heading mt-3">
-          <h4 class="mb-0">${data.title}</h4>
+          <h4 class="mb-0">${jobs.tittle}</h4>
         </div>
         <div class="mt-3 smaller">
-          <h6>${data.titleDesc}</h6>
+          <h6>${jobs.tittleDesc}</h6>
         </div>
       </div>`
 
-    const elements = document.createElement('div');
-    elements.innerHTML = cards;
-    elements.className = "col-md-4";
-    contentContainer.appendChild(elements);
-  })
+      const elements = document.createElement('div');
+      elements.innerHTML = cards;
+      elements.className = "col-md-4";
+      contentContainer.appendChild(elements);
+    });
+})
 }
+
+  main();
