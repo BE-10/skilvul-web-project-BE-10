@@ -11,6 +11,13 @@ body {
     font-size: 14px;
 }
 
+/* .ftcards img {
+    float: left;
+    width:  100%;
+    height: 100%;
+    object-fit: cover;
+} */
+
 .ftcards a {
     width: 100%;
 }
