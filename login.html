@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		
+
 		<!-- Bootstrap CSS -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -14,46 +14,77 @@
 		/>
 
 		<!-- CSS Custom -->
-		<link rel="stylesheet" href="./styles/style.css">
-		
+		<link rel="stylesheet" href="./styles/login.css" />
+
 		<title>Job Advertizing</title>
 	</head>
-    <body>
+	<body>
+		<!-- ------- Login Form ------- -->
 
+		<section id="login-content">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-xl-6 login-column">
+						<h1>
+							Hello, <span class="title-login">Welcome back</span>
+						</h1>
+						<form id="login-form">
+							<div class="mb-3">
+								<label for="email" class="form-label"
+									>Email</label
+								>
+								<input
+									type="email"
+									class="form-control"
+									id="email"
+									aria-describedby="emailHelp"
+									placeholder="Masukkan Email Anda"
+								/>
+								<div id="emailHelp" class="form-text">
+									We'll never share your email with anyone
+									else.
+								</div>
+							</div>
+							<div class="mb-3">
+								<label
+									for="exampleInputPassword1"
+									class="form-label"
+									>Password</label
+								>
+								<input
+									type="password"
+									id="password"
+									class="form-control"
+									id="exampleInputPassword1"
+									aria-describedby="passwordHelp"
+									placeholder="Masukkan Password Anda"
+								/>
+								<div id="passwordHelp" class="form-text">
+									We'll never share your password with anyone
+									else.
+								</div>
+							</div>
+							<button
+								type="submit"
+								class="btn-submit-login"
+								id="btn-submit"
+							>
+								Submit
+							</button>
 
-        <!-- ------- Login Form ------- -->
-        
-        <section id="login-content">
-            <div class="container">
-                <div class="row justify-content-end">
-                    <div class="col-xl-6 login-column">
-                        <h1>Hello, <span class="title-login">Welcome back</span></h1>
-                        <form id="login-form">
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Masukkan Email Anda">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" id="password" class="form-control" id="exampleInputPassword1" aria-describedby="passwordHelp" placeholder="Masukkan Password Anda">
-                                <div id="passwordHelp" class="form-text">We'll never share your password with anyone else.</div>
-                            </div>
-                            <button type="submit" class="btn-submit-login" id="btn-submit">Submit</button>
-                            
-                            <p>
-                                Anda belum punya akun?
-                                <span class="registers-page"><a href="#">Klik disini</a></span>
-                            </p>
+							<p>
+								Anda belum punya akun?
+								<span class="registers-page"
+									><a href="#">Klik disini</a></span
+								>
+							</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- ------- End Login Form ------- -->
-
+		<!-- ------- End Login Form ------- -->
 
 		<!-- JS Custom -->
 		<script src="./scripts/script.js"></script>
