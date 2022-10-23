@@ -21,3 +21,8 @@ body {
 .ftcards a {
     width: 100%;
 }
+
+.imagefits {
+    min-width : 25vw;
+    max-height : 25vh;
+}

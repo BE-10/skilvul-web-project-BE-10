@@ -18,7 +18,7 @@ function main() {
       const cards = `
       <div class="card p-3 mb-5 mt-2">
         <div>
-          <img class="card-img-top img-fluid" style="min-width : 25vw; max-height : 25vh;" src="../detail-pages/images/${jobs.image}" alt="Card image cap">
+          <img class="card-img-top img-fluid imagefits" src="../detail-pages/images/${jobs.image}" alt="Card image cap">
         </div>
         <div class="heading mt-3">
           <h4 class="mb-0">${jobs.title}</h4>
