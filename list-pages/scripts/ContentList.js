@@ -18,7 +18,7 @@ function main() {
       const cards = `
       <div class="card p-3 mb-5 mt-2">
         <div>
-          <img class="card-img-top" src="./images/${jobs.image}" alt="Card image cap">
+          <img class="card-img-top img-fluid" src="../detail-pages/images/${jobs.image}" alt="Card image cap">
         </div>
         <div class="heading mt-3">
           <h4 class="mb-0">${jobs.title}</h4>
@@ -27,7 +27,7 @@ function main() {
           <h6>${jobs.titleDesc}</h6>
         </div>
         <div class="ftcards">
-          <a href="#" class="btn btn-primary">Lihat Deskripsi</a>
+          <a href="../detail-pages/content.html?id=${jobs.id}" class="btn btn-primary">Lihat Deskripsi</a>
         </div>
       </div>`
 
