@@ -63,7 +63,7 @@
     font-weight: 500;
 }
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (max-width : 1200px) {
 /* ------------------------------------ End Login Page ------------------------------------ */
 
     /* ----------------- Login Page ----------------- */
@@ -76,7 +76,7 @@
     .login-column{
         margin: 25% 0 0;
         padding: 4%;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.95);
         border-radius: 10px;
     }
 
