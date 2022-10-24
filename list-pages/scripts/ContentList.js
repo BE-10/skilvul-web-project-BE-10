@@ -4,7 +4,7 @@ const url = `https://634811ba0484786c6e90f2f2.mockapi.io/jobs/`;
 const contentContainer = document.getElementById('content');
 
 function getUrlSearch(query) {
-  return `https://634811ba0484786c6e90f2f2.mockapi.io/jobs?search=${query}`;
+  return `https://634811ba0484786c6e90f2f2.mockapi.io/jobs?title=${query}`;
 }
 
 document.getElementById('searchInput').addEventListener('input', search);
