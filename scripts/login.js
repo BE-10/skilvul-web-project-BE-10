@@ -55,10 +55,10 @@ loginForm.addEventListener('submit', function (e) {
                     localStorage.setItem('id', isLoggedIn.id);
                     window.location = 'index.html';
                 } else {
-                    console.log('Email atau password anda salah!');
+                    alert('Email atau password anda salah!')
                 }
             } else {
-                console.log('Email belum terdaftar!');
+                alert('Email belum terdaftar!');
             }
         });
     }
