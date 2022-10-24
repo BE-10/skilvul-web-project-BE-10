@@ -5,25 +5,13 @@ body {
 .card {
     border: none;
     border-radius: 10px;
+    width: 100%
 }
 
 .smaller h6 {
     font-size: 14px;
 }
 
-.ftcards img {
-    float: left;
-    width:  100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 .ftcards a {
     width: 100%;
-}
-
-.imagefits {
-    min-width : 25vw;
-    min-height: 25vh;
-    max-height : 25vh;
 }
