@@ -9,3 +9,5 @@ proyek untuk menyelesaikan tugas projek webdev skilvul
 [Wireframe](https://whimsical.com/wireframe-be-10-PkRdFgygwq1RVEvmESBevB)
 
 [BRD](https://whimsical.com/brd-job-advertizing-5PU2Bpp6Gj3gqQhDD5Tstv)
+
+[Netlify](https://starlit-axolotl-87a512.netlify.app)
